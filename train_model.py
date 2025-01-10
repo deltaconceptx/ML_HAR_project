@@ -89,11 +89,8 @@ disp.plot(cmap='Blues')
 plt.title('Confusion Matrix')
 plt.savefig('results/confusion_matrix.png')  # Save as image
 plt.show()
-
-#Saving results---------------------
 # Convert confusion matrix to DataFrame
 cm_df = pd.DataFrame(cm, index=np.unique(y_train), columns=np.unique(y_train))
-
 # Save as CSV
 cm_df.to_csv('results/confusion_matrix.csv')
 
